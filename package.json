@@ -6,17 +6,21 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "webpack server --config=build/webpack.serve.js --open --progress --mode=development",
-    "build": "webpack --config=build/webpack.build.js --mode=production"
+    "build": "webpack --config=build/webpack.build.js --mode=production",
+    "start": "esno server/main.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.17.3",
     "vue": "^3.2.33"
   },
   "devDependencies": {
+    "@vue/server-renderer": "^3.2.33",
     "compression-webpack-plugin": "^9.2.0",
     "css-loader": "^6.7.1",
+    "esno": "^0.14.1",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.0",
     "sass": "^1.50.0",

@@ -7,6 +7,8 @@ specifiers:
   mini-css-extract-plugin: ^2.6.0
   sass: ^1.50.0
   sass-loader: ^12.6.0
+  ts-loader: ^9.2.8
+  typescript: ^4.6.3
   vue: ^3.2.33
   vue-loader: ^17.0.0
   webpack: ^5.72.0
@@ -24,6 +26,8 @@ devDependencies:
   mini-css-extract-plugin: 2.6.0_webpack@5.72.0
   sass: 1.50.0
   sass-loader: 12.6.0_sass@1.50.0+webpack@5.72.0
+  ts-loader: 9.2.8_typescript@4.6.3+webpack@5.72.0
+  typescript: 4.6.3
   vue-loader: 17.0.0_webpack@5.72.0
   webpack: 5.72.0_webpack-cli@4.9.2
   webpack-cli: 4.9.2_0d7fbf49284cee8179ee97aed7cf05b4
@@ -2316,6 +2320,21 @@ packages:
     engines: {node: '>=0.6'}
     dev: true
 
+  /ts-loader/9.2.8_typescript@4.6.3+webpack@5.72.0:
+    resolution: {integrity: sha512-gxSak7IHUuRtwKf3FIPSW1VpZcqF9+MBrHOvBp9cjHh+525SjtCIJKVGjRKIAfxBwDGDGCFF00rTfzB1quxdSw==}
+    engines: {node: '>=12.0.0'}
+    peerDependencies:
+      typescript: '*'
+      webpack: ^5.0.0
+    dependencies:
+      chalk: 4.1.2
+      enhanced-resolve: 5.9.3
+      micromatch: 4.0.5
+      semver: 7.3.7
+      typescript: 4.6.3
+      webpack: 5.72.0_webpack-cli@4.9.2
+    dev: true
+
   /tslib/2.3.1:
     resolution: {integrity: sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==}
     dev: true
@@ -2326,6 +2345,12 @@ packages:
     dependencies:
       media-typer: 0.3.0
       mime-types: 2.1.35
+    dev: true
+
+  /typescript/4.6.3:
+    resolution: {integrity: sha512-yNIatDa5iaofVozS/uQJEl3JRWLKKGJKh6Yaiv0GLGSuhpFJe7P3SbHZ8/yjAHRQwKRoA6YZqlfjXWmVzoVSMw==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
     dev: true
 
   /unpipe/1.0.0:

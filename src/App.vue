@@ -1,13 +1,13 @@
 <template>
     <div id="app">
-      <span>app</span>
+      <p>app</p>
       <img src="./assets/images/test.png" alt="">
     </div>
 </template>
 
 <script>
 export default {
-  name: '',
+  name: 'app',
   data () {
     return {
     }
@@ -29,5 +29,8 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  img {
+    width: 50px;
+  }
 }
 </style>

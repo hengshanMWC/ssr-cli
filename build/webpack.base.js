@@ -40,7 +40,10 @@ module.exports = {
   },
   plugins: [
     new VueLoaderPlugin(),
-    new HtmlWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, '../index.html'),
+      title: 'vue3+webpack5+ssr'
+    }),
     new MiniCssExtractPlugin()
   ]
 }
